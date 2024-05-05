@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.small {
+    font-size: 0.83em;
+}
+
+.logo {
+    font-size: 1.6em;
+}
+
+.category-label {
+    font-size: 1.3em;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body{
+        font-size: 16px;
+    }
+}
+
+.container {
+    width: 90%;
+}
+
+.tint-image {
+    filter: brightness(0.7);
+}
+
+.bg-image {
+    position: relative;
+}
+
+.bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/TravelImage.png");
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
+.home-image{
+    position: relative;
+}
+
+.home-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/HomeImage.png");
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
+.blog-header-image{
+    position: relative;
+}
+
+.blog-header-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/BlogDetailsImage.png");
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
+.floating-button {
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
+
+.floating-button:hover {
+    transform: scale(1.1) translateY(-10px);
+    -webkit-transform: scale(1.1) translateY(-10px);
+    -moz-transform: scale(1.1) translateY(-10px);
+    -ms-transform: scale(1.1) translateY(-10px);
+    -o-transform: scale(1.1) translateY(-10px);
+}
